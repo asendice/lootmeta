@@ -6,8 +6,7 @@ const SearchBar = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.setTerm(value)
-        props.onSubmit();
+        props.setTerm(value);
     }
 
     return (
@@ -15,7 +14,7 @@ const SearchBar = (props) => {
             <form  onSubmit={handleSubmit}>
                 <div className="searchBarContainer" >
                 <input className="searchBar" type="text" value={value} onChange={(e) => setValue(e.target.value)} />
-                <button  type="submit">submit</button>
+                <button  type="submit">Submit</button>
                 </div>
                 
             </form>
